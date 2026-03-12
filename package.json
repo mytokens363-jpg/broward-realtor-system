@@ -1,0 +1,17 @@
+{
+  "name": "broward-realtor-system",
+  "version": "1.0.0",
+  "description": "Broward County Real Estate Lead Generation Platform",
+  "scripts": {
+    "deploy": "wrangler deploy --env production"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.24.0",
+    "resend": "^3.2.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240620.0",
+    "typescript": "^5.3.0",
+    "wrangler": "^3.35.0"
+  }
+}

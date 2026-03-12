@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Broward Realtor | Better Marketing Investment for Your Home</title>
+    <meta name="description" content="Broward County real estate agent who invests more in YOUR listing marketing. My brokerage fee structure means you get premium photography, drone video, and targeted ads. Get a FREE valuation today.">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script defer src="/js/main.js"></script>
+</head>
+<body>
+    <!-- CORRECTED HERO SECTION - Accurate $400 Messaging -->
+    <header id="hero">
+        <div class="hero-content">
+            <h1>The Broward Realtor</h1>
+            <p class="tagline">I invest MORE in selling your home than other agents can afford.</p>
+
+            <div class="value-prop-box">
+                <h2>Here's What Most Agents Won't Tell You:</h2>
+                <p>At traditional brokerages, my broker takes <strong>30% of my commission</strong> before I see a dime. That money doesn't go toward marketing YOUR home — it goes to their overhead.</p>
+
+                <div class="comparison">
+                    <div class="traditional">
+                        <h4>Traditional Brokerage (30% split)</h4>
+                        <p>On a $500K sale at 3% commission:</p>
+                        <p>My share: $7,500 gross</p>
+                        <p><strong>Broker takes: $2,250 (30%)</strong></p>
+                        <p>I keep: $5,250 to reinvest</p>
+                    </div>
+                    <div class="dalton-wade highlight-box">
+                        <h4>Dalton Wade Brokerage (My Choice)</h4>
+                        <p><strong>Broker fee: $400 flat — period</strong></p>
+                        <p>I keep: $7,100 per deal</p>
+                        <p class="highlight">That's <span class="highlight">$1,850 MORE</span> available to invest in YOUR listing!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="benefit-bullets">
+                <h3>This Means YOUR Property Gets:</h3>
+                <ul>
+                    <li><strong>Professional Photography</strong> — Not basic phone pics</li>
+                    <li><strong>Drone Aerial Video</strong> — Showcase your property's best angles</li>
+                    <li><strong>Targeted Digital Ads</strong> — Reach serious buyers actively searching</li>
+                    <li><strong>Staging Consultation</strong> — Maximize appeal and final sale price</li>
+                </ul>
+            </div>
+
+            <button id="get-valuation" class="cta-button">Get Your FREE Property Valuation →</button>
+        </div>
+    </header>
+
+    <!-- VALUATION TOOL SECTION -->
+    <section id="valuation-tool">
+        <h2>What's Your Broward Home Worth?</h2>
+        <p>Enter your address for an instant FREE valuation. No obligation, no phone calls.</p>
+
+        <form id="valuation-form">
+            <input type="text" placeholder="Enter property address (Broward County)" required>
+            <button type="submit">Get Valuation</button>
+        </form>
+
+        <div id="valuation-result" class="hidden"></div>
+    </section>
+
+    <!-- ABOUT SECTION WITH CORRECTED MESSAGING -->
+    <section id="about">
+        <h2>Why Broward Sellers Choose Me</h2>
+        <p class="intro-text">I'm not here to convince you with false savings promises. The commission you pay stays the same (3% is standard). What's different is how much I can AFFORD to invest in selling YOUR home.</p>
+
+        <div class="benefit-grid">
+            <div class="benefit-card">
+                <h3>📸 Premium Photography Included</h3>
+                <p>Most agents budget $500-$1,000 for basic photos. I can afford $2,000+ professional shoots because my broker doesn't take 30%.</p>
+            </div>
+
+            <div class="benefit-card">
+                <h3>🚁 Drone &amp; Video Tour</h3>
+                <p>Aerial footage and video walkthroughs cost $800-$1,500. I include this in every listing — no upcharge.</p>
+            </div>
+
+            <div class="benefit-card">
+                <h3>🎯 Digital Advertising Budget</h3>
+                <p>I can run targeted Facebook/Instagram ads to qualified buyers for $1,000-$3,000 per listing. Traditional agents max out at $500.</p>
+            </div>
+
+            <div class="benefit-card">
+                <h3>🛋️ Professional Staging Consult</h3>
+                <p>Staging can increase sale price by 6-10%. I offer complimentary staging advice from certified professionals.</p>
+            </div>
+        </div>
+
+        <div class="math-callout">
+            <h4>The Math Behind It</h4>
+            <p><strong>Sale Price:</strong> $500,000 | <strong>3% Commission:</strong> $15,000 total</p>
+            <p><strong>My Share:</strong> 1.5% = $7,500 gross per deal</p>
+            <ul>
+                <li>Traditional Brokerage: I keep $5,250 after broker takes 30%</li>
+                <li>Dalton Wade: I keep $7,100 after flat $400 fee</li>
+                <li><strong>Difference:</strong> $1,850 MORE per deal for YOUR marketing budget</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>Let's Discuss Your Listing Strategy</h2>
+        <p>Schedule a quick call or I'll have my virtual assistant reach out with answers.</p>
+
+        <form id="contact-form">
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Email address" required>
+            <input type="tel" placeholder="Phone (optional)">
+            <textarea placeholder="How can I help you sell your home?"></textarea>
+            <button type="submit">Schedule Consultation</button>
+        </form>
+    </section>
+
+    <!-- CHATBOT WIDGET -->
+    <div id="chatbot-container" class="hidden">
+        <button id="open-chatbot" class="chatbot-trigger">💬 Need Questions Answered?</button>
+
+        <div id="chatbot-window" class="hidden">
+            <div class="chat-header">
+                <span>Broward Realtor Assistant</span>
+                <button id="close-chatbot">×</button>
+            </div>
+            <div id="chat-messages"></div>
+            <input type="text" id="chat-input" placeholder="Type your question...">
+            <button id="send-chat">Send</button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>The Broward Realtor | Dalton Wade Real Estate Brokerage | Licensed FL Realtor</p>
+        <p>&copy; 2026 All Rights Reserved | <a href="/privacy">Privacy Policy</a></p>
+    </footer>
+
+    <!-- CHATBOT SCRIPT -->
+    <script src="/js/chatbot.js"></script>
+</body>
+</html>

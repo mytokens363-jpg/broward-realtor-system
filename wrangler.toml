@@ -1,0 +1,10 @@
+name = "broward-realtor-api"
+main = "workers/api/lead-capture.ts"
+compatibility_date = "2024-01-01"
+
+vars = {}
+
+[build]
+command = "npm run build"
+
+# Deploy: wrangler deploy --env production

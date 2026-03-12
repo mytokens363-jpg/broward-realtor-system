@@ -1,0 +1,375 @@
+/* Broward Realtor System - Stylesheet */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(135deg, #2c5aa0 0%, #1e4d8f 100%);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.tagline {
+    font-size: 1.4em;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+/* Value Prop Box */
+.value-prop-box {
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 900px;
+    text-align: left;
+}
+
+.value-prop-box h2 {
+    color: #ffeb3b;
+    margin-bottom: 15px;
+}
+
+/* Comparison Boxes */
+.comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.traditional, .dalton-wade {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.dalton-wade {
+    border: 2px solid #4caf50;
+}
+
+.highlight-box {
+    position: relative;
+}
+
+.highlight-box::before {
+    content: "⭐";
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 2em;
+}
+
+/* Benefits Bullets */
+.benefit-bullets {
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 800px;
+}
+
+.benefit-bullets ul {
+    list-style: none;
+}
+
+.benefit-bullets li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+/* CTA Button */
+.cta-button {
+    background: #ff6b35;
+    color: white;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 30px;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255,107,53,0.4);
+}
+
+/* Valuation Tool Section */
+#valuation-tool {
+    background: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#valuation-form {
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    gap: 10px;
+}
+
+#valuation-form input {
+    flex: 1;
+    padding: 15px 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+#valuation-form button {
+    background: #2c5aa0;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#valuation-result {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* About Section */
+#about {
+    padding: 80px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    color: #2c5aa0;
+    margin-bottom: 30px;
+}
+
+.intro-text {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.benefit-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.benefit-card h3 {
+    color: #2c5aa0;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.math-callout {
+    background: linear-gradient(135deg, #e8f4fd 0%, #d0e7f8 100%);
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 50px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.math-callout h4 {
+    color: #2c5aa0;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+/* Contact Section */
+#contact {
+    background: #2c5aa0;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+#contact-form button {
+    background: #ff6b35;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+/* Chatbot Widget */
+#chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.chatbot-trigger {
+    background: #2c5aa0;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    font-size: 1em;
+}
+
+#chatbot-window {
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    width: 350px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.chat-header {
+    background: #2c5aa0;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+#chat-messages {
+    height: 400px;
+    padding: 15px;
+    overflow-y: auto;
+    background: #f9f9f9;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    max-width: 80%;
+}
+
+.message.user {
+    background: #e8f4fd;
+    margin-left: auto;
+}
+
+.message.bot {
+    background: white;
+    border: 1px solid #ddd;
+}
+
+.typing {
+    color: #999;
+    font-style: italic;
+}
+
+#chatbot-window input {
+    width: calc(100% - 60px);
+    padding: 15px;
+    border: none;
+    border-top: 1px solid #ddd;
+    font-size: 1em;
+}
+
+#chatbot-window button {
+    width: 50px;
+    background: #2c5aa0;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    float: right;
+}
+
+/* Footer */
+footer {
+    background: #1e4d8f;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer a {
+    color: #ffeb3b;
+    text-decoration: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    #hero h1 { font-size: 2em; }
+    .comparison { grid-template-columns: 1fr; }
+    #valuation-form { flex-direction: column; }
+    #chatbot-window { width: 90%; right: -5px; }
+}
