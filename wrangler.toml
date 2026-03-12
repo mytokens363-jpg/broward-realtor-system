@@ -1,10 +1,19 @@
 name = "broward-realtor-api"
-main = "workers/api/lead-capture.ts"
+main = "workers/api/index.ts"
 compatibility_date = "2024-01-01"
 
-vars = {}
+# ─── Environment Variables ───────────────────────────────────────────────────
+# Add these in Cloudflare Dashboard → Workers & Pages → broward-realtor-api
+# → Settings → Variables and Secrets
+#
+# CLAUDE_API_KEY    = sk-ant-api03-...   (from console.anthropic.com)
+# NEON_DATABASE_URL = postgres://...     (from neon.tech → Connection string)
+# EMAIL_API_KEY     = re_...             (from resend.com → API Keys)
+# REALTOR_EMAIL     = you@gmail.com      (your email for lead alerts)
 
 [build]
 command = "npm run build"
 
-# Deploy: wrangler deploy --env production
+# ─── Cloudflare Pages (Frontend) ─────────────────────────────────────────────
+# Deploy command: wrangler pages deploy public/ --project-name=broward-realtor-system
+# URL: https://broward-realtor-system.pages.dev

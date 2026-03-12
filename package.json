@@ -1,9 +1,12 @@
 {
   "name": "broward-realtor-system",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Broward County Real Estate Lead Generation Platform",
   "scripts": {
-    "deploy": "wrangler deploy --env production"
+    "dev": "wrangler dev workers/api/index.ts",
+    "deploy": "wrangler deploy",
+    "deploy:pages": "wrangler pages deploy public/ --project-name=broward-realtor-system",
+    "deploy:all": "npm run deploy:pages && npm run deploy"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.24.0",
